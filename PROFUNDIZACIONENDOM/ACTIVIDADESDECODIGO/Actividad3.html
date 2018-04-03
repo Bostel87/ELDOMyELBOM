@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 3</title>
+  </head>
+  <body>
+    <input id="miInput">
+    <script type="text/javascript">
+
+    // var elemento = document.getElementById("miInput");
+    // elemento.addEventListener("click", cambiar1);
+    // elemento.addEventListener("blur", cambiar2);
+    //
+    // function cambiar1() {
+    //   document.getElementById("miInput").style.width="150px";
+    //  document.getElementById("miInput").style.height="50px";
+    // }
+    //
+    // function cambiar2() {
+    //      document.getElementById("miInput").style.color="orange";
+    //      document.getElementById("miInput").style.backgroundColor="blue";
+    // }
+
+      document.getElementById("miInput").addEventListener("click", cambiar1);
+      document.getElementById("miInput").addEventListener("blur", cambiar2);
+      function cambiar1(){
+        document.getElementById("miInput").style.width = "150px";
+        document.getElementById("miInput").style.height = "50px";
+      }
+      function cambiar2(){
+        document.getElementById("miInput").style.color = "orange";
+        document.getElementById("miInput").style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>

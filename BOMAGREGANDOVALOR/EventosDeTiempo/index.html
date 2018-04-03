@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos de Tiempo</title>
+  </head>
+  <body>
+    <button onclick="usarSetInterval()">Usar setInterval</button>
+    <button onclick="pararSetInterval()">Parar setInterval</button>
+    <button onclick="usarSetTimeout()">Usar setTimeout</button>
+
+    <script type="text/javascript">
+      var inval;
+
+      function usarSetInterval(){
+        inval = setInterval(function(){
+          alert("Usando setInterval");
+        },3000);
+      }
+
+      function pararSetInterval(){
+        clearInterval(inval);
+        alert("setInterval Detenido");
+      }
+
+      function usarSetTimeout(){
+        setTimeout(function(){
+          alert("Usando setTimeout")
+        },3000);
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contar y modificar Las Etiquetas de Los nodos</title>
+  </head>
+  <body>
+  <p>Mi primer Elemento Parrafo</p>
+  <p>Mi segundo Elemento Parrafo</p>
+  <p>Mi tercero Elemento Parrafo</p>
+  <p>Mi cuarto Elemento Parrafo</p>
+  <p>Mi quiento Elemento Parrafo</p>
+  <p>Mi sexto Elemento Parrafo</p>
+  <button onclick="numeroDeParrafos()">Numero de Parrafos</button>
+  <button onclick="cambiarParrafos()">Cambiar Parrafos</button>
+  <script type="text/javascript">
+    function numeroDeParrafos(){
+      var listaParrafos = document.getElementsByTagName('p');
+      var numeroParrafos = listaParrafos.length;
+      alert(numeroParrafos);
+    }
+
+    function cambiarParrafos(){
+      document.getElementsByTagName('p')[0].style.backgroundColor = "orange";
+      document.getElementsByTagName('p')[0].style.fontSize = "x-large";
+
+      document.getElementsByTagName('p')[1].style.backgroundColor = "red";
+      document.getElementsByTagName('p')[1].style.fontSize = "large";
+
+      document.getElementsByTagName('p')[2].style.backgroundColor = "blue";
+      document.getElementsByTagName('p')[2].style.fontSize = "x-large";
+
+      document.getElementsByTagName('p')[3].style.backgroundColor = "yellow";
+      document.getElementsByTagName('p')[3].style.fontSize = "xx-large";
+
+      document.getElementsByTagName('p')[4].style.backgroundColor = "green"
+      document.getElementsByTagName('p')[4].style.bfontSize = "xx-small";
+
+      document.getElementsByTagName('p')[5].style.backgroundColor = "red"
+      document.getElementsByTagName('p')[5].style.fontSize = "xx-small";
+    }
+  </script>
+  </body>
+</html>

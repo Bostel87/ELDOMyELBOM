@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos simultaneos Listener</title>
+  </head>
+  <body>
+    <button id="boton1">Mostrar Alert</button>
+    <script type="text/javascript">
+
+    var elemento = document.getElementById("boton1");
+    elemento.addEventListener("click",mostrarMensaje1);
+    elemento.addEventListener("mouseover",mostrarMensaje2);
+
+    function mostrarMensaje1(){
+      alert("EventListener1");
+
+    }
+
+    function mostrarMensaje2(){
+      alert("EventListener2");
+    }
+    </script>
+  </body>
+</html>

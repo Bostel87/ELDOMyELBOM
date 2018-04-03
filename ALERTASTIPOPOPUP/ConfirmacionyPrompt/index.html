@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Confirmacion y Prompt</title>
+  </head>
+  <body onload="confirmar()">
+    <p id="mensaje"></p>
+    <script type="text/javascript">
+      function confirmar(){
+        if(confirm("Permiteme Realizar una serie de preguntas") == true){
+          preguntas();
+
+        }else{
+
+        }
+      }
+      function preguntas(){
+        var nombre = prompt("Cual es tu Nombre: ");
+        var apellido = prompt("Cual es tu Apellido: ");
+        var edad = prompt("Cual es tu Edad: ");
+        var ciudad = prompt("Cual es tu Ciudad: ");
+        var direccion = prompt("Cual es tu Direccion: ");
+        var pais = prompt("Cual es tu Pais: ");
+        var profesion = prompt("Cual es tu Profesion: ");
+        var universidad = prompt("Cual es tu Universidad: ");
+
+        if(nombre != null){
+          document.getElementById("mensaje").innerHTML="Usted se llama "+nombre+" "+apellido+" tiene "+edad+
+          " Vive en la ciudad de "+ciudad+" y su direccion es "+ direccion+" del Pais "+ pais+" Ademas de esto es profesional y posee un titulo en "+profesion+
+          " de "+universidad+" Usted es muy amable en proporcionarme esta informacion muchas gracias";
+        }
+      }
+    </script>
+  </body>
+</html>

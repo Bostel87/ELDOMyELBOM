@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>get Elements by Tag Name</title>
+    <script type="text/javascript">
+      function cambiarDiv(){
+        var divs = document.getElementsByTagName("div");
+
+        for (var i = 0; i < divs.length; i++) {
+          divs[i].style.color = "orange";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>Mi Div 1</div>
+    <div>Mi Div 2</div>
+    <div>Mi Div 3</div>
+    <button onclick="cambiarDiv()">Cambiar Divs</button>
+  </body>
+
+</html>

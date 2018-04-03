@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App Name</title>
+  </head>
+  <body onload="navegador()">
+<h1>El nombre de tu navegador</h1>
+<p id="nombre"></p>
+<script type="text/javascript">
+  function navegador(){
+    document.getElementById("nombre").innerHTML="El nombre de este navegador es: "+navigator.appName;
+  }
+</script>
+  </body>
+</html>

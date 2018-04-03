@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cambiar fondo de nodos</title>
+  </head>
+  <body>
+    <div >Mi primer Elemento div</div>
+    <div >Mi segundo Elemento div</div>
+    <div >Mi tercer Elemento div</div>
+    <div >Mi cuarto Elemento div</div>
+    <button onclick="cambiarColor()">Cambiar Divs</button>
+    <script type="text/javascript">
+      function cambiarColor(){
+        var listaNodos = document.getElementsByTagName("div");
+
+        for (var i = 0; i < listaNodos.length; i++) {
+          listaNodos[i].style.backgroundColor = "green";
+          }
+      }
+    </script>
+  </body>
+</html>

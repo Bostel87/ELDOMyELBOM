@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 2</title>
+  </head>
+  <body>
+    <div id="miDiv">
+      Mi div!!!
+    </div>
+    <script type="text/javascript">
+     document.getElementById("miDiv").addEventListener("click", cambiarDiv);
+
+      function cambiarDiv(){
+        document.getElementById("miDiv").style.width = "400px";
+        document.getElementById("miDiv").style.height ="400px";
+        document.getElementById("miDiv").style.backgroundColor = "blue";
+        document.getElementById("miDiv").style.fontSize = "xx-large";
+      }
+    </script>
+  </body>
+</html>

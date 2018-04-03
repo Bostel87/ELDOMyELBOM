@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prompt Basico</title>
+  </head>
+  <body onload="alerta3()">
+    <h2>Cuadro Prompt</h2>
+    <p id="mensaje"></p>
+    <script type="text/javascript">
+      function alerta3(){
+        var Edad=prompt("Digite su Edad: ");
+        if (Edad != null) {
+          document.getElementById('mensaje').innerHTML ="Usted tiene: "+Edad+" Anios";
+        }
+      }
+    </script>
+  </body>
+</html>

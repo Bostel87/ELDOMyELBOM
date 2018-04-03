@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aplicar Dos Acciones a un Nodo</title>
+  </head>
+  <body>
+    <div >Mi primer Elemento div</div>
+    <div >Mi segundo Elemento div</div>
+    <div >Mi tercer Elemento div</div>
+    <div >Mi cuarto Elemento div</div>
+    <button onclick="cambiarColor()">Cambiar Divs</button>
+    <script type="text/javascript">
+      function cambiarColor(){
+        document.getElementsByTagName("div")[0].style.backgroundColor = "blue";
+        document.getElementsByTagName("div")[0].innerHTML = "Mi div Modificado";
+      }
+    </script>
+  </body>
+</html>

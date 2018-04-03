@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad3</title>
+  </head>
+  <body>
+  <form class="" action="index.html" method="post">
+  <label for="txtnombre">Nombre:</label><br>
+  <input type="text" name="txtnombre" value=""><br>
+  <label for="txtApellido">Apellido:</label><br>
+  <input type="text" name="txtApellido" value=""><br>
+  <label for="txtEmail">Email:</label><br>
+  <input type="text" name="txtEmail" value=""><br>
+  <label for="txtComentario">Comentario:</label><br>
+  <textarea name="txtComentario" rows="8" cols="80"></textarea><br>
+  <input type="button" name="Enviar" value="Enviar">
+  </form>
+  <script type="text/javascript">
+    var elemento = document.getElementsByTagName("label");
+    var cantidad = elemento.length;
+    alert("la cantidad de labels en el documento es: "+cantidad);
+    var elemento1 = document.getElementsByTagName("input");
+    var cantidad1 = elemento1.length;
+    alert("La cantidad de inputs en el elemento son: "+cantidad1);
+    var elemento2 = document.getElementsByTagName("textarea");
+    var cantidad2 = elemento2.length;
+    alert("La cantidad de textarea es: "+cantidad2);
+  </script>
+  </body>
+</html>

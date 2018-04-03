@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad5</title>
+  </head>
+  <body>
+<h1>Esto Es JS</h1>
+    <script type="text/javascript">
+      window.addEventListener("resize", function(){
+        var parrafo = document.createElement("p");
+        var texto = document.createTextNode("Nuevo parrafo");
+        parrafo.appendChild(texto);
+
+      document.body.appendChild(parrafo);
+      });
+    </script>
+  </body>
+</html>

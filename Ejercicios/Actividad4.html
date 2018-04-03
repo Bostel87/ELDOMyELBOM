@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad4</title>
+  </head>
+  <body>
+    <table border="1px">
+      <thead>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Sub-Total</th>
+      </thead>
+      <tbody>
+        <td>Camisa</td>
+        <td>
+          <input id="precioC" type="text" name="" value="30000" disabled>
+        </td>
+        <td>
+          <input id="cantidadC" type="text" name="" value="">
+        </td>
+        <td>
+          <input id="sub-totalC" type="text" name="" value="" disabled>
+        </td>
+        <tr>
+        <td>Gorra</td>
+        <td>
+          <input id="precioG" type="text" name="" value="50000" disabled>
+        </td>
+        <td>
+          <input id="cantidadG" type="text" name="" value="">
+        </td>
+        <td>
+          <input id="sub-totalG" type="text" name="" value="" disabled>
+        </td>
+        </tr>
+        <tr>
+          <td>Zapatos</td>
+          <td>
+            <input id="precioZ" type="text" name="" value="60000" disabled>
+          </td>
+          <td>
+            <input id="cantidadZ" type="text" name="" value="">
+          </td>
+          <td>
+            <input id="sub-totalZ" type="text" name="" value="" disabled>
+          </td>
+        </tr>
+        <tr>
+          <td>Pantalon</td>
+          <td>
+            <input id="precioP" type="text" name="" value="80000" disabled>
+          </td>
+          <td>
+            <input id="cantidadP" type="text" name="" value="">
+          </td>
+          <td>
+            <input id="sub-totalP" type="text" name="" value="" disabled>
+          </td>
+        </tr>
+      </tbody>
+    </table><br>
+    <label for="txtTotalCompra">Total Compra:</label> <input id="txtTot" type="text" name="txtTotalCompra" value=""><br><br>
+    <input type="button" name="" value="Calcular Sub-Total" onclick="CalcularSubC()">
+    <input type="button" name="" value="Calcular Total" onclick="CalcularTot()">
+  </body>
+  <script type="text/javascript">
+
+  function CalcularSubC (){
+  var precioC = document.getElementById("precioC").value;
+  var cantidadC = document.getElementById("cantidadC").value;
+  // var subtot =
+  document.getElementById("sub-totalC").value = precioC * cantidadC;
+
+  var precioG = document.getElementById("precioG").value;
+  var cantidadG = document.getElementById("cantidadG").value;
+  // var subtot =
+  document.getElementById("sub-totalG").value = precioG * cantidadG;
+
+  var precioZ = document.getElementById("precioZ").value;
+  var cantidadZ = document.getElementById("cantidadZ").value;
+  // var subtot =
+  document.getElementById("sub-totalZ").value = precioZ * cantidadZ;
+
+  var precioP = document.getElementById("precioP").value;
+  var cantidadP = document.getElementById("cantidadP").value;
+  // var subtot =
+  document.getElementById("sub-totalP").value = precioP * cantidadP;
+  }
+
+  function CalcularTot (){
+    var precioC = parseInt(document.getElementById("sub-totalC").value);
+    var precioG = parseInt(document.getElementById("sub-totalG").value);
+    var precioZ = parseInt(document.getElementById("sub-totalZ").value);
+    var precioP = parseInt(document.getElementById("sub-totalP").value);
+    var resultado = (precioC + precioG + precioZ + precioP);
+
+    document.getElementById("txtTot").value = resultado;
+
+  }
+
+
+  </script>
+</html>

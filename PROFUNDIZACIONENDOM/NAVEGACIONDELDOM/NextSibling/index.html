@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Next Sibling</title>
+    <script type="text/javascript">
+
+      function nodoSiguienteHermano(){
+        var texto = "";
+
+        var parrafo = document.getElementById("p1");
+
+        var mensaje = document.getElementById("mensaje");
+
+        mensaje.innerHTML = "Siguiente nodo hermano del elemento parrafo : "+ parrafo.nextSibling.nodeName;
+        // Se utiliza el nextSibling del elemento parrafo con id p1 para obtener el siguiente nodo hermano con su
+        // con su respectivo nombre con el fin de mostrarlo en el elemento p con id mensaje
+      }
+    </script>
+  </head>
+  <body>
+    <div id="miDiv"><h1>Encabezado 1</h1><p id="p1">parrafo 1</p><input type="text"></div>
+    <br>
+    <button onclick="nodoSiguienteHermano()">Nodo Ultimo</button>
+    <p id="mensaje"></p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="texto1">Primer Texto</h1>
+    <p id="texto2">Segundo Texto</p>
+    <br>
+    <div id="miDiv"><h1>Elementos</h1><br><p>Nombre:</p><br><input type="text"><button >Aceptar</button></div>
+    <br><br>
+    <button onclick="nodosHijos()">Ver tipo de Elemnto</button> <button onclick="primerElemento()">Primer Elemento</button><button onclick="ultimoElemento()" >Ultimo Elemento</button>
+    <p id="mensaje"></p>
+    <script type="text/javascript">
+        var cambiartexto = document.getElementById("texto1").childNodes[0].nodeValue;
+        document.getElementById("texto2").innerHTML = cambiartexto;
+
+        function nodosHijos(){
+        var texto = "";
+        var div = document.getElementsByTagName("div")[0];
+
+        for (var i = 0; i < div.childNodes.length; i++) {
+          texto += div.childNodes[i].nodeName+"<br>";
+        }
+        document.getElementById("mensaje").innerHTML = texto;
+        }
+
+        function primerElemento(){
+
+          var div = document.getElementById("miDiv");
+
+          var mensaje = document.getElementById("mensaje");
+
+          mensaje.innerHTML = "El primer elemento es: " +div.firstChild.nodeName;
+        }
+
+        function ultimoElemento(){
+          var div = document.getElementById("miDiv");
+          var mensaje = document.getElementById("mensaje");
+          mensaje.innerHTML = "El ultimo Elemento es: "+div.lastChild.nodeName;
+        }
+    </script>
+  </body>
+</html>

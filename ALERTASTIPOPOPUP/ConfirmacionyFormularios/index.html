@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Confirmacion y Formularios</title>
+  </head>
+  <body onload="confirmar()">
+    <h1>Registro de Informacion</h1>
+    <script type="text/javascript">
+      function confirmar(){
+        if(confirm("Desea Ingresar a la Pagina ")==true){
+
+        }else{
+          window.close();
+
+        }
+      }
+      function datos(){
+        var d1 = document.getElementById('nombre').value;
+        var d2 = document.getElementById('apellido').value;
+        var d3 = document.getElementById('sexo').value;
+        var d4 = document.getElementById('edad').value;
+        var d5 = document.getElementById('fecha').value;
+        var d6 = document.getElementById('lugar').value;
+        alert("Usuario Registrado");
+        alert("Su nombre es "+d1+" "+d2+" tiene sexo "+d3+" se edad es "+d4+" Usted nacio el "+d5+" en "+d6+".");
+      }
+    </script>
+    Nombre: <input type="text" id="nombre"><br>
+    Apellido: <input type="text" id="apellido"><br>
+    Sexo: <input type="text" id="sexo"><br>
+    Edad: <input type="text" id="edad"><br>
+    Fecha de Nacimiento: <input type="text" id="fecha"><br>
+    Lugar de Nacimiento: <input type="text" id="lugar"><br>
+    <input type="button" onclick="datos()" value="Registrar">
+  </body>
+</html>

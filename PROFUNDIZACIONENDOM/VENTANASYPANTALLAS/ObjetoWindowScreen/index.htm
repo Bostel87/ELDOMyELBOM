@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="abrirVentana()">Abrir Ventana</button>
+    <button onclick="moverVentana()">Mover Ventana</button>
+    <button onclick="cambiarDimVentana()">Cambiar Dimension Ventana</button>
+    <button onclick="verInfoPantalla()">Info Pantalla</button>
+
+    <p id="infoPantalla"></p>
+    <script type="text/javascript">
+      var ventana1;
+
+      function abrirVentana(){
+        ventana1 = window.open("","_blank","width=500, height=400");
+
+      }
+
+      function moverVentana(){
+        ventana1.moveTo(700,900);
+      }
+
+      function cambiarDimVentana(){
+        ventana1.resizeTo(800,800);
+        ventana1.focus();
+
+      }
+
+      function verInfoPantalla(){
+        var info="";
+        info +='Informacion de la Pantalla <br>';
+        info +='Alto Permitido: '+screen.availHeight +'<br>';
+        info +='Ancho Permitido: '+screen.availWidth +'<br>';
+        info +='Altura Total: '+screen.height +'<br>';
+        info +='Ancho Total: '+screen.width +'<br>';
+        info +='Numero Bits de Colores: '+screen.colorDepth +'<br>';
+
+        document.getElementById("infoPantalla").innerHTML = info;
+      }
+    </script>
+  </body>
+</html>

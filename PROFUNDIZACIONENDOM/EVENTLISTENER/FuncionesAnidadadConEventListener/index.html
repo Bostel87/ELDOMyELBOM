@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Funciones anidadas Con EventListener</title>
+  </head>
+  <body>
+  <button id="boton1">Mostrar</button>
+  <script type="text/javascript">
+
+    var nombre = "Boris Parrales";
+    var estatura = 1.84;
+
+    document.getElementById("boton1").addEventListener("click", function(){
+      saludar(nombre, estatura);
+    });
+
+    function saludar(nombre, estatura){
+      alert("Hola"+nombre+" Mides "+estatura+"cm");
+    }
+  </script>
+  </body>
+</html>
